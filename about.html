@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+/>
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Online Course Management</title>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <section class="about_header">
+    <nav>
+      <a href="index.html"><img src="images/institute.jpeg" /></a>
+      <div class="navigation_links" id="navigationlinks">
+        <i class="fas fa-times" onclick="hideMenu()"></i>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="course.html">Courses</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <i class="fas fa-bars" onclick="showMenu()"></i>
+    </nav>
+  </section>
+
+  <!-----content---->
+  <section class="content">
+    <div class="content_row">
+        <div class="content_col">
+            <h1>We are the mostly choosen institute around the country</h1>
+            <p>We are a premier learning institute committed to empowering students with in-demand technical
+                 skills and industry-oriented training. Our courses are designed to meet the evolving needs of the tech world, focusing 
+                 on practical learning and real-world applications. We specialize in Java Full Stack Development, Python Full Stack Development,
+                  and Artificial Intelligence
+                  & Machine Learning. With a team of experienced instructors, interactive classrooms, and hands-on projects, 
+                  we ensure every student gains both conceptual clarity and practical expertise.
+                   Whether you're a beginner or looking to upskill, our institute
+                 provides the perfect platform to launch or elevate your tech career.</p>
+                 <a href="course.html" class="visit_buttom">EXPLORE NOW</a>
+        </div>
+        <div class="content_col">
+                <img src="images/about_img.jpg">
+        </div>
+    </div>
+  </section>
+   <section class="footer">
+    <h4>About Us</h4>
+    <p>Our institute is dedicated to empowering students with practical skills and quality
+       education tailored to industry needs. With experienced trainers, modern classrooms, 
+       and hands-on learning environments, 
+       we focus on building strong foundations in technology and career readiness.
+       Our mission is to nurture talent and guide students toward a successful future.</p>
+       <div class="icons_footer">
+          <i class="fab fa-facebook"></i>
+          <i class="fab fa-twitter"></i>
+          <i class="fab fa-instagram"></i>
+          <i class="fab fa-linkedin"></i>
+       </div>
+   </section>
+   <script>
+    var navigationlinks = document.getElementById("navigationlinks");
+
+    function showMenu() {
+      navigationlinks.style.right = "0";
+    } 
+
+    function hideMenu() {
+      navigationlinks.style.right = "-200px";
+    }
+  </script>
+</body>
+</html>

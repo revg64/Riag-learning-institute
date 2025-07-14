@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+/>
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Online Course Management</title>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <section class="about_header">
+    <nav>
+      <a href="index.html"><img src="images/institute.jpeg" /></a>
+      <div class="navigation_links" id="navigationlinks">
+        <i class="fas fa-times" onclick="hideMenu()"></i>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="course.html">Courses</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <i class="fas fa-bars" onclick="showMenu()"></i>
+    </nav>
+  </section>
+<!-----course---->
+     <section class="course">
+        <div class="courses_col">
+        </div>
+    <h1>Exciting Courses</h1>
+    <p> These are the trending and exciting courses that we offer which will be adaptive 
+      to present market demands.
+    </p>
+    <div class="course_row">
+      <div class="course_column">
+            <h2>Java full stack development</h2>
+            <p>
+              In this course, students will learn core Java programming
+              concepts including object-oriented programming (OOP),classes and objects, inheritance, polymorphism, exception handling,
+              and file handling. We will also cover collections, 
+              and an introduction to frameworks like Spring and Spring Boot to build backend APIs. 
+              By the end of the course, students will be able to develop robust applications
+            </p>
+      </div>
+      <div class="course_column">
+            <h2>python full stack development</h2>
+            <p>
+              In this course, students will learn Python programming starting from the basics 
+              such as variables, data types, control structures, functions, and object-oriented
+              programming. We’ll move on to working with databases using SQLite and MySQL, and
+              cover web development using Flask or Django frameworks. Students will also
+              learn how to build RESTful APIs, perform form handling.
+            </p>
+      </div>
+      <div class="course_column">
+            <h2>Artificial Intelligence and machine learning</h2>
+            <p>
+              In this course, students will learn the fundamentals of Artificial Intelligence
+            and Machine Learning using Python. Topics include data preprocessing, supervised
+            and unsupervised learning and real-world algorithm 
+            implementation using libraries like NumPy, Pandas and TensorFlow.
+            Students will build projects such as predictive models, recommendation systems.
+            </p>
+      </div>
+      </div>
+  </div>
+  </section>
+<!---facilities-->
+   <section class="facilities">
+    <h1>
+      Our Facilities
+    </h1>
+    <p>
+      Our institute provides modern classrooms, practical lab facilities, experienced trainers, and free Wi-Fi.
+       We offer online learning support and placement assistance with resume building and mock 
+       interviews. Doubt sessions and personal guidance help students learn effectively and confidently.
+    </p>
+    <div class="facilities_row">
+      <div class="facilities_column">
+        <img src="images/class_room.jpg">
+        <h3>Mordern Class Rooms</h3>
+        <p>Our modern classrooms are equipped with digital boards and smart
+           technology to make learning interactive and engaging.</p>
+      </div>
+      <div class="facilities_column">
+        <img src="images/labs.jpg">
+        <h3>practical labs</h3>
+        <p> The institute provides well-equipped practical labs that allow 
+          students to gain hands-on experience in real-world applications.</p>
+      </div>
+      <div class="facilities_column">
+        <img src="images/dought.jpg">
+        <h3>Personal Guidance</h3>
+        <p>Students receive personal guidance from experienced
+           faculty to support their academic and career growth.</p>
+      </div>
+    </div>
+   </section>
+   <section class="footer">
+    <h4>About Us</h4>
+    <p>Our institute is dedicated to empowering students with practical skills and quality
+       education tailored to industry needs. With experienced trainers, modern classrooms, 
+       and hands-on learning environments, 
+       we focus on building strong foundations in technology and career readiness.
+       Our mission is to nurture talent and guide students toward a successful future.</p>
+       <div class="icons_footer">
+          <i class="fab fa-facebook"></i>
+          <i class="fab fa-twitter"></i>
+          <i class="fab fa-instagram"></i>
+          <i class="fab fa-linkedin"></i>
+       </div>
+   </section>
+   <script>
+    var navigationlinks = document.getElementById("navigationlinks");
+
+    function showMenu() {
+      navigationlinks.style.right = "0";
+    } 
+
+    function hideMenu() {
+      navigationlinks.style.right = "-200px";
+    }
+  </script>
+</body>
+</html>

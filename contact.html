@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+/>
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Online Course Management</title>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <section class="about_header">
+    <nav>
+      <a href="index.html"><img src="images/institute.jpeg" /></a>
+      <div class="navigation_links" id="navigationlinks">
+        <i class="fas fa-times" onclick="hideMenu()"></i>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="course.html">Courses</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <i class="fas fa-bars" onclick="showMenu()"></i>
+    </nav>
+  </section>
+  <section class="contact-section">
+    <img src="images/contact.png"/>
+    <p>These are our contact details</p>
+    <div class="city-contact">
+      <h2>Hyderabad</h2>
+      <ul>
+        <li>Phone: +91 98765 43210</li>
+        <li>Email: hyderabad@institute.com</li>
+        <li>Location: 1st Floor, Tech Park, Hitech City, Hyderabad</li>
+      </ul>
+    </div>
+
+    <div class="city-contact">
+      <h2>Chennai</h2>
+      <ul>
+        <li>Phone: +91 91234 56789</li>
+        <li>Email: chennai@institute.com</li>
+        <li>Location: 2nd Floor, Learning Tower, Anna Salai, Chennai</li>
+      </ul>
+    </div>
+
+    <div class="city-contact">
+      <h2>Mumbai</h2>
+      <ul>
+        <li>Phone: +91 99887 77665</li>
+        <li>Email: mumbai@institute.com</li>
+        <li>Location: 3rd Floor, Knowledge Hub, Andheri West, Mumbai</li>
+      </ul>
+    </div>
+    <div class="comment-box">
+
+  <h3>Leave a comment</h3>
+
+  <form action="form_handler.php" method="post" class="comment-form">
+    <input type="text" name="name" placeholder="Enter Name">
+    <input type="email" name="email" placeholder="Enter Email">
+    <textarea rows="5" name="message" placeholder="Your comment"></textarea>
+    <button type="submit" class="visit_buttom" >POST COMMENT</button>
+  </form>
+
+</div>
+
+  </section>
+   <section class="footer">
+    <h4>About Us</h4>
+    <p>Our institute is dedicated to empowering students with practical skills and quality
+       education tailored to industry needs. With experienced trainers, modern classrooms, 
+       and hands-on learning environments, 
+       we focus on building strong foundations in technology and career readiness.
+       Our mission is to nurture talent and guide students toward a successful future.</p>
+       <div class="icons_footer">
+          <i class="fab fa-facebook"></i>
+          <i class="fab fa-twitter"></i>
+          <i class="fab fa-instagram"></i>
+          <i class="fab fa-linkedin"></i>
+       </div>
+   </section>
+   <script>
+    var navigationlinks = document.getElementById("navigationlinks");
+
+    function showMenu() {
+      navigationlinks.style.right = "0";
+    } 
+
+    function hideMenu() {
+      navigationlinks.style.right = "-200px";
+    }
+  </script>
+</body>
+</html>
